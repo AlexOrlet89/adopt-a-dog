@@ -8,6 +8,7 @@ Use [this template](https://github.com/alchemycodelab/half-baked-web-01-adopt-a-
 - On load, use fetch and .then to hit a GET endpoint, get all items, and set state and update the view using the response.
 - In front end apps with asynchronous behavior, use the network tab to examine (and debug) the request being sent to a server and the response received from a server.
 
+
 Here is the model for the `dogs` table
 
 ![](./dogs-model.png)
@@ -32,3 +33,10 @@ For this deliverable you have been given a supabase database and some render fun
 | ASYNC: `fetchDog(id)` : return single dog from supabase                                        | 2      |
 | Detail page should get the id from the URL and use that id to fetch that dog from supabase.    | 1      |
 | Detail page should show the user details about the dog (including age, breed, and description) | 1      |
+
+###
+
+Fetch-utils.js
+client is our connection to the supabase database and will be used in  our getdogs function (selecting all columns from the table dogs) as well as getdog whch will (from tables, select id)
+
+Your job is to add the code in `fetch-utils.js`, `app.js` and `detail.js` to render the list of animals and the details page.
